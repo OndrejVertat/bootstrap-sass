@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-sass",
+  "name": "bootstrap-sass-modular",
   "version": "3.4.1",
-  "description": "bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.",
+  "description": "bootstrap-sass-modular is a Sass-powered version of Bootstrap 3 using modular system.",
   "main": "assets/javascripts/bootstrap.js",
   "style": "assets/stylesheets/_bootstrap.scss",
   "sass": "assets/stylesheets/_bootstrap.scss",
@@ -26,7 +26,8 @@
     "Thomas McDonald",
     "Tristan Harward",
     "Peter Gumeson",
-    "Gleb Mazovetskiy"
+    "Gleb Mazovetskiy",
+    "Ondrej Vertat"
   ],
   "license": "MIT",
   "bugs": {
