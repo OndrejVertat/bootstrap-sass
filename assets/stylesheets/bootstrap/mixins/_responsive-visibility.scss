@@ -1,3 +1,5 @@
+@use "../_variables" as *;
+
 // [converter] $parent hack
 @mixin responsive-visibility($parent) {
   #{$parent} {

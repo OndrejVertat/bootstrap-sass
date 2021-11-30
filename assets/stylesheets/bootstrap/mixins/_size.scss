@@ -1,3 +1,5 @@
+@use "../_variables" as *;
+
 // Sizing shortcuts
 
 @mixin size($width, $height) {

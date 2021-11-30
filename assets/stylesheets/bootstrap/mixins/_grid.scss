@@ -1,11 +1,14 @@
+@use "sass:math";
+@use "../_variables" as *;
+
 // Grid system
 //
 // Generate semantic grid columns with these mixins.
 
 // Centered container element
 @mixin container-fixed($gutter: $grid-gutter-width) {
-  padding-right: ceil(($gutter / 2));
-  padding-left: floor(($gutter / 2));
+  padding-right: ceil(math.div($gutter, -2));
+  padding-left: floor(math.div($gutter, -2));
   margin-right: auto;
   margin-left: auto;
   @include clearfix;
@@ -13,8 +16,8 @@
 
 // Creates a wrapper for a series of columns
 @mixin make-row($gutter: $grid-gutter-width) {
-  margin-right: floor(($gutter / -2));
-  margin-left: ceil(($gutter / -2));
+  margin-right: floor(math.div($gutter, -2));
+  margin-left: ceil(math.div($gutter, -2));
   @include clearfix;
 }
 

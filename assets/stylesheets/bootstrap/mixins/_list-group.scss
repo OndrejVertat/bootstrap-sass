@@ -1,3 +1,5 @@
+@use "../_variables" as *;
+
 // List Groups
 
 @mixin list-group-item-variant($state, $background, $color) {

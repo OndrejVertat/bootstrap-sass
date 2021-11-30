@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "../_variables" as *;
+
 // Framework grid generation
 //
 // Used only by Bootstrap to generate the correct number of grid classes given
@@ -13,8 +16,8 @@
     // Prevent columns from collapsing when empty
     min-height: 1px;
     // Inner gutter via padding
-    padding-right: floor(($grid-gutter-width / 2));
-    padding-left: ceil(($grid-gutter-width / 2));
+    padding-right: floor((math.div($grid-gutter-width, 2)));
+    padding-left: ceil((math.div($grid-gutter-width, 2)));
   }
 }
 

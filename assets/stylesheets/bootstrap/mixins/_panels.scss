@@ -1,3 +1,5 @@
+@use "../_variables" as *;
+
 // Panels
 
 @mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
